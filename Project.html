@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Project</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- Responsive File -->
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Responsive Settings -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	<style>  
+        /* 样式 */  
+        * {  
+            box-sizing: border-box;  
+        }  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #f5f5f5;  
+        }  
+        .container {  
+            max-width: 1200px;  
+            margin: 0 auto;  
+            padding: 20px;  
+        }  
+        header {  
+            text-align: center;  
+            padding: 50px 0;  
+            background-color: #333;  
+            color: white;  
+        }  
+        .project-grid {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+            grid-gap: 20px;  
+        }  
+        .project-card {  
+            background-color: white;  
+            border-radius: 5px;  
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+            padding: 20px;  
+            text-align: center;  
+        }  
+        .project-card img {  
+            max-width: 100%;  
+            border-radius: 5px;  
+        }  
+        .project-card h3 {  
+            margin-top: 10px;  
+        }  
+        .project-card p {  
+            color: #666;  
+            margin-bottom: 15px;  
+        }  
+        .btn {  
+            display: inline-block;  
+            padding: 8px 15px;  
+            background-color: #007BFF;  
+            color: white;  
+            border-radius: 5px;  
+            text-decoration: none;  
+        }  
+        footer {  
+            text-align: center;  
+            padding: 20px;  
+            background-color: #333;  
+            color: white;  
+            position: fixed;  
+            bottom: 0;  
+            width: 100%;  
+        }  
+    </style>  
+</head>
+
+<body>
+
+<div class="page-wrapper">
+			<!-- Preloader -->
+			<div class="preloader">
+				<div class="icon"></div>
+			</div>
+
+			<!-- Main Header -->
+			<header class="main-header header-style-one">
+		
+
+				<!-- Header Upper -->
+				<div class="header-upper">
+					<div class="auto-container">
+						<div class="inner-container clearfix">
+							<!--Logo-->
+							<div class="logo-box clearfix">
+								<div class="logo"><a href="index.html"><img src="img/1/01.jpg" alt=""></a></div>
+								<div class="search-btn search-btn-one"><button type="button" class="theme-btn search-toggler"><span class="txt">Search</span>
+										<span class="icon flaticon-loupe-1"></span></button></div>
+							</div>
+
+							<!--Nav-->
+							<div class="nav-outer clearfix">
+								<!--Mobile Navigation Toggler-->
+								<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+
+								<!-- Main Menu -->
+								<nav class="main-menu navbar-expand-md navbar-light">
+									<div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+										<ul class="navigation clearfix">
+											<li><a href="index.html">Home page</a>
+												
+											</li>
+											<li><a href="About-us.html">About us</a>
+												
+											</li>
+											<li><a href="dengru.html">Courseware</a>
+												
+											</li>
+											<li><a href="Enquiry.html">Enquiry</a>
+												
+											</li>
+											<li class="current"><a href="Project.html">Project</a></li>
+											
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Header Upper-->
+
+
+				
+			<!--Search Popup-->
+			<div id="search-popup" class="search-popup">
+				<div class="close-search theme-btn"><span class="flaticon-targeting-cross"></span></div>
+				<div class="popup-inner">
+					<div class="overlay-layer"></div>
+					<div class="search-form">
+							<div class="form-group">
+								<fieldset>
+									<input type="search" class="form-control" name="search-input" value="" placeholder="Search HERE!!" required>
+									<input type="submit" value="Click" class="theme-btn">
+								</fieldset>
+							</div>
+						</form>
+
+						<br>
+						<h3>Please enter a keyword in the search box above</h3>
+						<ul class="recent-searches">
+							<li><a href="#">course</a></li>
+							<li><a href="#">Price</a></li>
+							<li><a href="#">Set meal</a></li>
+							<li><a href="#">Customer service</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+
+                       
+  <div class="container">  
+        <header>  
+            <h1>Student project presentation</h1>  
+            <p>Browse the wonderful projects created by our students</p>  
+        </header>  
+  
+        <section class="project-grid">  
+            <div class="project-card">  
+                <img src="path_to_your_image1.jpg" alt="项目1图片">  
+                <h3>Item 1 Title</h3>  
+                <p>A short description of item 1.</p>  
+                <a href="project1_details.html" class="btn">View details</a>  
+            </div>  
+			
+			 <div class="project-card">  
+                <img src="path_to_your_image1.jpg" alt="项目1图片">  
+                <h3>Item 2 Title</h3>  
+                <p>A short description of item 2.</p>  
+                <a href="project1_details.html" class="btn">View details</a>  
+            </div>  
+			
+			 <div class="project-card">  
+                <img src="path_to_your_image1.jpg" alt="项目1图片">  
+                <h3>Item 3 Title</h3>  
+                <p>A short description of item 3.</p>  
+                <a href="project1_details.html" class="btn">View details</a>  
+            </div>  
+			
+			 <div class="project-card">  
+                <img src="path_to_your_image1.jpg" alt="项目1图片">  
+                <h3>Item 4 Title</h3>  
+                <p>A short description of item 4.</p>  
+                <a href="project1_details.html" class="btn">View details</a>  
+            </div>  
+			
+			 <div class="project-card">  
+                <img src="path_to_your_image1.jpg" alt="项目1图片">  
+                <h3>Item 5 Title</h3>  
+                <p>A short description of item 5.</p>  
+                <a href="project1_details.html" class="btn">View details</a>  
+            </div>  
+			
+			 <div class="project-card">  
+                <img src="path_to_your_image1.jpg" alt="项目1图片">  
+                <h3>Item 6 Title</h3>  
+                <p>A short description of item 6.</p>  
+                <a href="project1_details.html" class="btn">View details</a>  
+            </div>  
+  
+            <!-- 复制上面的div添加更多项目 -->  
+  
+        </section>  
+    </div>  
+
+
+ <!-- Main Footer -->
+			<footer class="main-footer">
+
+			
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="auto-container">
+						<div class="inner">
+							<div class="copyright">JAY-JAYMZ &copy; 223190722.2024</div>
+						</div>
+					</div>
+				</div>
+			
+
+			</footer>
+
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/custom-script.js"></script>
+
+</body>
+</html>
