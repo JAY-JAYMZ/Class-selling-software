@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Courseware</title>
+		<!-- Stylesheets -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!-- Responsive File -->
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+		<!-- Responsive Settings -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+		<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	
+
+	</head>
+<body>
+	<script type="text/javascript">
+	
+	// 尝试从localStorage中获取'isVerified'的值  
+let isVerifiedValue = localStorage.getItem('isVerified');  
+  
+// 检查是否获取到了值且值为'true'  
+if (isVerifiedValue === 'true') {  
+    // 如果'isVerified'为'true'，则显示body内容或body内的某个区域  
+    document.body.style.display = 'block'; // 假设body之前被隐藏了，但通常body默认是显示的  
+    // 或者，如果您只想显示body内的某个特定区域，可以像下面这样操作：  
+    // document.getElementById('someRegionId').style.display = 'block';  
+} else {  
+    // 如果'isVerified'不是'true'，则不显示body内容或body内的某个区域  
+    document.body.style.display = 'none'; // 这会隐藏整个body，通常不推荐这样做  
+    // 或者，如果您只想隐藏body内的某个特定区域，可以像下面这样操作：  
+    // document.getElementById('someRegionId').style.display = 'none';  
+  
+    // 注意：如果整个body被隐藏，那么页面将完全空白，包括导航栏、页脚等。  
+    // 在这种情况下，您可能需要一个加载指示器或重定向到另一个页面。
+	alert('Please log in');
+	window.location.href = 'dengru.html';
+}
+
+	</script>
+	<div class="page-wrapper">
+			<!-- Preloader -->
+			<div class="preloader">
+				<div class="icon"></div>
+			</div>
+
+			<!-- Main Header -->
+			<header class="main-header header-style-one">
+		
+
+				<!-- Header Upper -->
+				<div class="header-upper">
+					<div class="auto-container">
+						<div class="inner-container clearfix">
+							<!--Logo-->
+							<div class="logo-box clearfix">
+								<div class="logo"><a href="index.html"><img src="img/1/01.jpg" alt=""></a></div>
+								<div class="search-btn search-btn-one"><button type="button" class="theme-btn search-toggler"><span class="txt">Search</span>
+										<span class="icon flaticon-loupe-1"></span></button></div>
+							</div>
+
+							<!--Nav-->
+							<div class="nav-outer clearfix">
+								<!--Mobile Navigation Toggler-->
+								<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+
+								<!-- Main Menu -->
+								<nav class="main-menu navbar-expand-md navbar-light">
+									<div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+										<ul class="navigation clearfix">
+											<li><a href="index.html">Home page</a>
+												
+											</li>
+											<li><a href="About-us.html">About us</a>
+												
+											</li>
+											<li class="current"><a href="Courseware.html">Courseware</a>
+												
+											</li>
+											<li><a href="Enquiry.html">Enquiry</a>
+												
+											</li>
+											<li><a href="Project.html">Project</a>
+												
+											</li>
+											
+											<li>
+												<button onclick="localStorage.clear(); alert('LocalStorage已被清除。');">Log out.</button> 
+											</li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Header Upper-->
+
+				<!-- Sticky Header  -->
+				<div class="sticky-header">
+					<div class="auto-container clearfix">
+						<!--Logo-->
+						<div class="logo pull-left">
+							<a href="index.html" title=""><img src="images/sticky-logo.png" alt="" title=""></a>
+						</div>
+						<!--Right Col-->
+						<div class="pull-right">
+							<!-- Main Menu -->
+							<nav class="main-menu clearfix">
+								<!--Keep This Empty / Menu will come through Javascript-->
+							</nav><!-- Main Menu End-->
+						</div>
+					</div>
+				</div><!-- End Sticky Menu -->
+
+				
+			<!--Search Popup-->
+			<div id="search-popup" class="search-popup">
+				<div class="close-search theme-btn"><span class="flaticon-targeting-cross"></span></div>
+				<div class="popup-inner">
+					<div class="overlay-layer"></div>
+					<div class="search-form">
+							<div class="form-group">
+								<fieldset>
+									<input type="search" class="form-control" name="search-input" value="" placeholder="Search HERE!!" required>
+									<input type="submit" value="Click" class="theme-btn">
+								</fieldset>
+							</div>
+						</form>
+
+						<br>
+						<h3>Please enter a keyword in the search box above</h3>
+						<ul class="recent-searches">
+							<li><a href="#">course</a></li>
+							<li><a href="#">Price</a></li>
+							<li><a href="#">Set meal</a></li>
+							<li><a href="#">Customer service</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+
+								
+
+		 <div class="container">
+        <div class="list">
+            <h3>Commodity List</h3>
+            <ul class="goods">
+                <li>
+                    <img src="img/1001.jpg" alt="">
+                    <p class="desc">ICT-1001</p>
+                    <p class="price">&#36;7999</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p001">BUY</a>
+                </li>
+                <li>
+                    <img src="img/1002.jpg" alt="">
+                    <p class="desc">ICT-1002</p>
+                    <p class="price">&#36;;7899</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p002">BUY</a>
+                </li>
+                <li>
+                    <img src="img/1003.jpg" alt="">
+                    <p class="desc">ICT-1003</p>
+                    <p class="price">&#36;6799</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p003">BUY</a>
+                </li>
+                <li>
+                    <img src="img/1004.jpg" alt="">
+                    <p class="desc">ICT-1004</p>
+                    <p class="price">&#36;4899</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p004">BUY</a>
+                </li>
+            </ul>
+            <ul class="goods">
+                <li>
+                    <img src="img/1005.jpg" alt="">
+                    <p class="desc">AHC-2001</p>
+                    <p class="price">&#36;;7499</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p005">BUY</a>
+                </li>
+                <li>
+                    <img src="img/1006.jpg" alt="">
+                    <p class="desc">AHC-2002</p>
+                    <p class="price">&#36;;6499</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p006">BUY</a>
+                </li>
+                <li>
+                    <img src="img/1007.jpg" alt="">
+                    <p class="desc">AHC-2003</p>
+                    <p class="price">&#36;;8999</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p007">BUY</a>
+                </li>
+                <li>
+                    <img src="img/1008.jpg" alt="">
+                    <p class="desc">AHC-2004</p>
+                    <p class="price">&#36;;9999</p>
+                    <a href="javascript:void(0)" class="buy" data-pid="p008">BUY</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cart">
+            <h3 class="title">Shopping cart Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Product information</td>
+                        <td>Unit price ($)</td>
+                        <td>Quantity</td>
+                        <td>Subtotal ($)</td>
+                        <td>Operation</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="orders-total">
+                <p>Total <span class="total">0</span> item(s) Total amount
+                <span class="total-money">&#36;0</span>
+                </p>
+                <div class="checkout">
+                    <a href="javascript:void(0)" id="to-checkout">
+                        Immediate Settlement
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+    <script type="text/template" id="cart-item-template">
+        <tr data-pid="{{pid}}">
+            <td>
+                <img src="{{src}}" alt="">
+                <span>{{pname}}</span>
+            </td>
+            <td class="price">&#36;{{price}}</td>
+            <td>
+                <button class="sub">-</button>
+                <input type="text" class="number" value="1">
+                <button class="add">+</button>
+            </td>
+            <td class="count">&#36;{{price}}</td>
+            <td>
+                <button class="del">Delete</button>
+            </td>
+        </tr>
+    </script>
+
+    <script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        var datas = {
+            p001: { pname: 'ICT-1001', price: 7999, src: 'img/1001.jpg' },
+            p002: { pname: 'ICT-1002', price: 7899, src: 'img/1002.jpg' },
+            p003: { pname: 'ICT-1003', price: 6799, src: 'img/1003.jpg' },
+            p004: { pname: 'ICT-1004', price: 4899, src: 'img/1004.jpg' },
+            p005: { pname: 'AHC-2001', price: 7499, src: 'img/1005.jpg' },
+            p006: { pname: 'AHC-2002', price: 6499, src: 'img/1006.jpg' },
+            p007: { pname: 'AHC-2003', price: 8999, src: 'img/1007.jpg' },
+            p008: { pname: 'AHC-2004', price: 9999, src: 'img/1008.jpg' }
+        };
+
+        //点击购买
+        $('.buy').click(function() {
+            var pid = $(this).attr('data-pid');
+            var info = datas[pid];
+            var isExist = false;
+            var index = 0;
+            
+            $('tbody>tr').each(function(idx, ele) {
+                if (pid == $(ele).attr('data-pid')) {
+                    isExist = true;
+                    index = idx;
+                }
+            });
+
+            if (isExist) {
+                $('tbody>tr').eq(index).find('.add').trigger('click');
+            } else {
+                var template = $('#cart-item-template').html();
+                var newItem = template.replace('{{pid}}', pid)
+                                      .replace('{{src}}', info.src)
+                                      .replace('{{pname}}', info.pname)
+                                      .replace(/{{price}}/g, info.price);
+                $('tbody').append(newItem);
+            }
+            TotalPrice();
+        });
+
+        $('table').on('click', '.del', function() {
+            var flag = confirm('Are you sure you want to delete this item?');
+            if (flag) {
+                $(this).closest('tr').remove();
+                TotalPrice();
+            }
+        });
+
+        function TotalPrice() {
+            var sum = 0;
+            var count = 0;
+            
+            $('tbody>tr').each(function(idx, ele) {
+                var price = parseFloat($(ele).find('.price').html().substring(1));
+                var quantity = parseInt($(ele).find('.number').val());
+                var subtotal = price * quantity;
+                $(ele).find('.count').html('&#36;' + subtotal);
+                
+                sum += subtotal;
+                count += quantity;
+            });
+
+            $('.total-money').html('&#36;' + sum);
+            $('.total').html(count);
+        }
+
+        $('table').on('click', '.sub', function() {
+            var num = $(this).next().val();
+            if (num == 1) {
+                var flag = confirm("Are you sure you want to delete this item?");
+                if (flag) {
+                    $(this).closest('tr').remove();
+                }
+            } else {
+                num--;
+                $(this).next().val(num);
+                var price = $(this).parent().siblings('.price').html().substring(1);
+                var result = calPrice(num, price);
+                $(this).parent().next().html('&#36;' + result);
+            }
+            TotalPrice();
+        });
+
+        function calPrice(num, price) {
+            return num * price;
+        }
+
+        $('table').on('click', '.add', function() {
+            var num = $(this).prev().val();
+            num++;
+            $(this).prev().val(num);
+            var price = $(this).parent().siblings('.price').html().substring(1);
+            var result = calPrice(num, price);
+            $(this).parent().next().html('&#36;' + result);
+            TotalPrice();
+        });
+    </script>
+		
+		
+		
+
+	<!-- Main Footer -->
+			<footer class="main-footer">
+
+			
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="auto-container">
+						<div class="inner">
+							<div class="copyright">JAY-JAYMZ &copy; 223190722.2024</div>
+						</div>
+					</div>
+				</div>
+			
+
+			</footer>
+
+		</div>
+		<!--End pagewrapper-->
+		<!--Scroll to top-->
+		<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>
+
+		<script src="js/R-U-trying-to-confuse-old-man.js"></script>
+	
+
+	</body>
+	
+	<script>  
+// 当文档加载完成后执行  
+document.addEventListener('DOMContentLoaded', (event) => {  
+    // 检查localStorage是否有数据  
+    if (localStorage.length > 0) {  
+        // 如果有数据，则显示网页内容  
+        document.getElementById('content').style.display = 'block';  
+        // 这里不需要做其他操作，因为内容已经显示了  
+    } else {  
+        // 如果没有数据，可以选择隐藏内容或重定向到登录页面  
+        // 隐藏内容（如果之前没有通过CSS隐藏）  
+        // document.getElementById('content').style.display = 'none';  
+        // 或者重定向到登录页面或提示用户  
+        alert('未检测到localStorage数据，请登录或访问登录页面。');  
+        // 示例重定向到登录页面  
+        // window.location.href = 'login.html';  
+    }  
+});  
+</script>  
+	
+</html>
