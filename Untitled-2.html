@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>The to-do list</title>  
+    <style>  
+         body {  
+            font-family: Arial, sans-serif;  
+            margin: 20px;  
+        }  
+  
+        h1 {  
+            text-align: center;  
+        }  
+  
+        #todoInput {  
+            width: 50%;
+            padding: 10px; 
+            font-size: 16px;  
+            position: fixed;
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }  
+  
+        #addButton {  
+            position: fixed; 
+            top: 10px;
+            left: calc(50% + 28px); 
+        }  
+  
+        #todoList {  
+            list-style-type: none;  
+            padding: 0;  
+            margin-top: 70px;
+        } 
+  
+        #todoList li {  
+            margin-bottom: 10px;  
+            padding: 10px;  
+            background-color: #f4f4f4;  
+            border-radius: 5px;  
+            position: relative;  
+            display: flex;  
+            justify-content: space-between;  
+            align-items: center;  
+        }  
+  
+        #todoList li button {  
+            border: none;  
+            background-color: #ccc;  
+            color: white;  
+            padding: 5px 10px;  
+            border-radius: 5px;  
+            cursor: pointer;  
+            transition: background-color 0.3s;  
+        }  
+  
+        #todoList li button:hover {  
+            background-color: #f44336;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>The to-do list</h1>  
+    <input type="text" id="todoInput" placeholder="Add a to-do list...">  
+    <button onclick="addTodo()">ADD</button>  
+	<div>    
+    <button onclick="javascript:window.location.href='Enquiry.html';">Back to Home page</button> 
+</div>  
+    <ul id="todoList">  
+      
+    </ul>  
+  
+    <script>  
+        function addTodo() {  
+            const input = document.getElementById('todoInput');  
+            const list = document.getElementById('todoList');  
+            const item = document.createElement('li');  
+            const button = document.createElement('button');  
+  
+            if (input.value.trim() !== '') {  
+                item.textContent = input.value;  
+                button.textContent = 'delete';  
+                button.onclick = function() {  
+                    list.removeChild(item);  
+                };  
+  
+                item.appendChild(button);  
+                list.appendChild(item);  
+  
+                input.value = '';
+            }  
+        }  
+    </script>  
+</body>  
+</html>
